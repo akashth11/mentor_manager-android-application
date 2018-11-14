@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/reginfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Select Your Mentor :)"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#595e60"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="135dp"
+        tools:ignore="MissingConstraints"
+        android:textStyle="bold"/>
+
+
+        <ListView
+            android:id="@+id/retrmentorlist"
+            android:layout_width="match_parent"
+            android:layout_height="327dp">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/subreq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/requestcard"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Send Request"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/responsebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Response From Mentor"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+
+
+
+        <TextView
+            android:id="@+id/reqresult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="italic"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="#336aae"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
